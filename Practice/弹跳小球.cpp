@@ -9,11 +9,18 @@ int main() {
 	int x = 1;
 	int y = 10;
 
-	int height = 10;
-	int speed = 1;
+	
+	int speed_x = 1;
+	int speed_y = 1;
+
+	int left = 0;
+	int right = 20;
+	int top = 0;
+	int bottom = 20;
 
 	while (1) {
-		x = x + speed;
+		x = x + speed_x;
+		y = y + speed_y;
 		system("cls");//输出前把屏先清了。才有下落效果。
 
 		//用一个循环来改变x的值让小球往下落
@@ -24,10 +31,10 @@ int main() {
 				printf(" ");
 			printf("o\n");
 
-			if (x == height)
-				speed = -speed;
-			if (x == 0)
-				speed = -speed;
+			if ((x == top)||(x==bottom))
+				speed_x = -speed_x;
+			if ((y == left) || (y == right))
+				speed_y = -speed_y;
 		
 	}
 	
