@@ -2,6 +2,7 @@
 //11月13号继续
 #include <stdio.h>
 #include <stdlib.h>
+#include<windows.h>
 
 int main() {
 	//打印一个小球
@@ -30,6 +31,7 @@ int main() {
 			for (j = 0; j < y; ++j)
 				printf(" ");
 			printf("o\n");
+			Sleep(20);//用于控制小球的速度
 
 			if ((x == top)||(x==bottom))
 				speed_x = -speed_x;
