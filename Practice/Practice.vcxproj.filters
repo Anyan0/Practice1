@@ -18,5 +18,8 @@
     <ClCompile Include="弹跳小球.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="simple_aircraft_game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
